@@ -60,6 +60,11 @@ public class Menu extends javax.swing.JFrame {
 
         Btn_Edit1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
         Btn_Edit1.setText("Cek Status");
+        Btn_Edit1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Btn_Edit1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -133,6 +138,12 @@ public class Menu extends javax.swing.JFrame {
     private void Btn_KeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_KeluarActionPerformed
         dispose();
     }//GEN-LAST:event_Btn_KeluarActionPerformed
+
+    private void Btn_Edit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_Edit1ActionPerformed
+        // TODO add your handling code here:
+        new Status().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_Btn_Edit1ActionPerformed
 
     /**
      * @param args the command line arguments
