@@ -29,7 +29,6 @@ public class Menu extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         Btn_Daftar = new javax.swing.JButton();
-        Btn_Edit = new javax.swing.JButton();
         Btn_Keluar = new javax.swing.JButton();
         Btn_Edit1 = new javax.swing.JButton();
 
@@ -40,6 +39,7 @@ public class Menu extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Silahkan Memilih Menu", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.BELOW_TOP, new java.awt.Font("Times New Roman", 1, 20))); // NOI18N
 
         Btn_Daftar.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        Btn_Daftar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pendaftaran/img/Add User Male_1.png"))); // NOI18N
         Btn_Daftar.setText("Daftar");
         Btn_Daftar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -47,11 +47,10 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
-        Btn_Edit.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
-        Btn_Edit.setText("Edit Data");
-
         Btn_Keluar.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        Btn_Keluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pendaftaran/img/Logout.png"))); // NOI18N
         Btn_Keluar.setText("Keluar");
+        Btn_Keluar.setPreferredSize(new java.awt.Dimension(75, 27));
         Btn_Keluar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Btn_KeluarActionPerformed(evt);
@@ -59,7 +58,9 @@ public class Menu extends javax.swing.JFrame {
         });
 
         Btn_Edit1.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        Btn_Edit1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pendaftaran/img/Info.png"))); // NOI18N
         Btn_Edit1.setText("Cek Status");
+        Btn_Edit1.setPreferredSize(new java.awt.Dimension(75, 27));
         Btn_Edit1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Btn_Edit1ActionPerformed(evt);
@@ -71,22 +72,19 @@ public class Menu extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(27, 27, 27)
                 .addComponent(Btn_Daftar, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Btn_Edit, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(50, 50, 50)
                 .addComponent(Btn_Edit1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                 .addComponent(Btn_Keluar, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(27, 27, 27))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Btn_Edit, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Btn_Keluar, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Btn_Daftar, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Btn_Edit1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -182,7 +180,6 @@ public class Menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Btn_Daftar;
-    private javax.swing.JButton Btn_Edit;
     private javax.swing.JButton Btn_Edit1;
     private javax.swing.JButton Btn_Keluar;
     private javax.swing.JPanel jPanel1;

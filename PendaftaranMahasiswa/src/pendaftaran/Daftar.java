@@ -121,6 +121,7 @@ public class Daftar extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "FORM PENDAFTARAN MAHASISWA", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Times New Roman", 1, 24))); // NOI18N
 
         Btn_Simpan.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        Btn_Simpan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pendaftaran/img/Check Mark.png"))); // NOI18N
         Btn_Simpan.setText("Simpan Dan Kembali");
         Btn_Simpan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,6 +130,7 @@ public class Daftar extends javax.swing.JFrame {
         });
 
         Btn_Kembali.setFont(new java.awt.Font("Times New Roman", 1, 16)); // NOI18N
+        Btn_Kembali.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pendaftaran/img/U Turn to Left.png"))); // NOI18N
         Btn_Kembali.setText("Kembali");
         Btn_Kembali.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

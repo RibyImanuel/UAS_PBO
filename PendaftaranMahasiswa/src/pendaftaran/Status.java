@@ -21,6 +21,7 @@ public class Status extends javax.swing.JFrame {
     public Status() {
         initComponents();
         fetchData();
+        jTable1.setEnabled(false);
     }
     
     private void fetchData() {
@@ -85,6 +86,7 @@ public class Status extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         btn_dataLengkap.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btn_dataLengkap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pendaftaran/img/Info.png"))); // NOI18N
         btn_dataLengkap.setText("Lihat Data Lengkap");
         btn_dataLengkap.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,6 +95,7 @@ public class Status extends javax.swing.JFrame {
         });
 
         btn_keluar.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        btn_keluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/pendaftaran/img/Logout.png"))); // NOI18N
         btn_keluar.setText("Keluar");
         btn_keluar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
